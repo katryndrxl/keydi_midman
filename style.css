@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ========================================
+   GENERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #fff1f3;
+
+    background-image:
+        linear-gradient(rgba(217, 139, 152, 0.14) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(217, 139, 152, 0.14) 2px, transparent 2px),
+        linear-gradient(rgba(217, 139, 152, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217, 139, 152, 0.06) 1px, transparent 1px);
+
+    background-size:
+        32px 32px,
+        32px 32px,
+        8px 8px,
+        8px 8px;
+
+    color: #4e383b;
+
+    font-family: 'Patrick Hand', cursive;
+
+    font-size: 18px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 22px auto 0;
+
+    background: #fffaf8;
+
+    border: 1px solid #e2c3c4;
+
+    border-radius: 14px 14px 0 0;
+
+    box-shadow: 5px 5px 0 #efd0d3;
+
+    overflow: hidden;
+}
+
+.site-header img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 260px;
+
+    object-fit: cover;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+nav {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    background: #d98b98;
+
+    padding: 12px 15px;
+
+    text-align: center;
+
+    border-top: 2px solid #c87886;
+
+    border-bottom: 2px solid #c87886;
+
+    box-shadow: 5px 5px 0 #efd0d3;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+nav a {
+
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin: 2px 5px;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+
+    background: #fff0f2;
+
+    color: #a94f5d;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   PAGE BANNERS
+======================================== */
+
+.page-banner,
+.home-banner {
+
+    width: 100%;
+
+    margin: 28px auto;
+
+    background: #fffafa;
+
+    border: 2px dashed #d9a3aa;
+
+    border-radius: 16px;
+
+    box-shadow: 5px 5px 0 #efc8cd;
+
+    overflow: hidden;
+}
+
+.page-banner img,
+.home-banner img {
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 8 / 3;
+
+    object-fit: cover;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.container {
+
+    width: 100%;
+
+    margin: 28px auto;
+}
+
+.paper {
+
+    background: #fffaf8;
+
+    border: 1px solid #e2c3c4;
+
+    border-radius: 13px;
+
+    padding: 25px;
+
+    margin: 22px 0;
+
+    box-shadow: 5px 5px 0 #efd0d3;
+}
+
+.paper h2 {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto 18px;
+
+    background: #d98591;
+
+    color: white;
+
+    padding: 6px 22px;
+
+    transform: rotate(-1deg);
+
+    font-size: 25px;
+
+    border-radius: 3px;
+}
+
+.paper h3 {
+
+    color: #ad5966;
+
+    margin-top: 22px;
+}
+
+.paper p {
+    line-height: 1.7;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ========================================
+   NOTE
+======================================== */
+
+.note {
+    background: #ffe6e9;
+    border-left: 5px solid #cc7784;
+    padding: 15px 20px;
+    border-radius: 7px;
+    margin-top: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* ========================================
+   IMAGE CARDS
+======================================== */
+
+.image-card {
+
+    margin: 16px 0;
+
+    background: #fff;
+
+    border: 2px dashed #dcaeb5;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.image-card img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+/* ========================================
+   COLLECTIONS
+======================================== */
+
+.collection-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+.collection-card {
+
+    background: #fff;
+
+    border: 2px dashed #dcaeb5;
+
+    border-radius: 14px;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.collection-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 6px 6px 0 #e3aeb6;
+}
+
+.collection-card img {
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover img {
+
+    transform: scale(1.02);
+}
+.collection-card:nth-child(3) {
+    grid-column: 1 / -1;
+    width: 50%;
+    margin: 0 auto;
+}
+/* ========================================
+   TRANSACTION RATE TABLE
+======================================== */
+
+.rate-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+}
+
+.rate-table th,
+.rate-table td {
+
+    border-bottom: 1px dotted #d69ca5;
+
+    padding: 13px 10px;
+
+    text-align: left;
+}
+
+.rate-table th {
+
+    color: #9f4f5d;
+
+    background: #ffe8eb;
+}
+
+.rate-table tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+/* ========================================
+   VIDEO
+======================================== */
+
+video {
+
+    display: block;
+
+    width: 100%;
+
+    border: 2px solid #e2b9bf;
+
+    border-radius: 10px;
+
+    background: #f9dfe3;
+
+    margin-top: 15px;
+}
+
+
+/* ========================================
+   GALLERY
+======================================== */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+.gallery-card {
+
+    border: 2px dashed #dcaeb5;
+
+    border-radius: 14px;
+
+    background: #fbe1e5;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.gallery-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 5px 5px 0 #e3aeb6;
+}
+
+.gallery-card img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+
+    transform: scale(1.03);
+}
+
+
+/* ========================================
+   FORMS
+======================================== */
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+
+    display: block;
+
+    margin-top: 12px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 11px 13px;
+
+    margin-top: 5px;
+
+    border: 1px solid #d8aab1;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    font: 16px 'Poppins', sans-serif;
+}
+
+textarea {
+
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+
+    outline: 2px solid #e4aab2;
+
+    outline-offset: 1px;
+}
+
+input[type="submit"] { 
+ 
+    width: auto; 
+ 
+    background: #c96e7b; 
+ 
+    color: white; 
+ 
+    border: 0; 
+ 
+    padding: 11px 25px; 
+ 
+    cursor: pointer; 
+ 
+    font-weight: 600; 
+ 
+    display: block;
+
+    margin: 15px auto 0;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.button {
+
+    display: inline-block;
+
+    background: #c96e7b;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    box-shadow: 3px 3px 0 #a95561;
+
+    border: 0;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+    background: #b85f6c;
+}
+
+.contact-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 45px auto 0;
+
+    padding: 24px 15px;
+
+    text-align: center;
+
+    background: #d98b98;
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 13px 13px 0 0;
+}
+
+footer small {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 800px) {
+
+    .collection-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card img {
+
+        height: auto;
+
+        aspect-ratio: 4 / 3;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header,
+    nav,
+    main,
+    footer {
+
+        width: 94%;
+    }
+
+    nav a {
+
+        display: inline-block;
+
+        margin: 3px;
+
+        font-size: 12px;
+
+        padding: 6px 9px;
+    }
+
+    .paper {
+
+        padding: 20px;
+    }
+
+    .paper h2 {
+
+        font-size: 22px;
+    }
+
+    body {
+
+        font-size: 17px;
+    }
+}
+
+/* CONTACT PAGE */
+.contact-paper {
+    text-align: center;
+}
+
+.contact-paper h2 {
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    max-width: 760px;
+    margin: 0 auto 25px;
+}
+
+.email-box {
+    background: #fff0f2;
+    border: 1px dashed #dcaeb5;
+    border-radius: 12px;
+    padding: 12px 20px;
+    max-width: 430px;
+    margin: 0 auto 20px;
+}
+
+.email-box h3 {
+    margin: 0 0 5px;
+    color: #ad5966;
+}
+
+.email-box p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-buttons {
+    justify-content: center;
+    margin: 18px 0 22px;
+}
+
+.note {
+    background: #ffe6e9;
+    border-left: 5px solid #cc7784;
+    padding: 15px 20px;
+    border-radius: 7px;
+    margin-top: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
